@@ -1,0 +1,224 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+  margin: auto;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__contacts-list {
+    padding-left: 0px;
+  }
+
+  &__contacts-item:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  &__contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: color 250ms $animationTimingFunction;
+  }
+
+  &__contacts-link:hover,
+  &__contacts-link:focus {
+    color: $accentColor;
+  }
+
+  &__container {
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__container-form-subscribe {
+    @media screen and (min-width: 768px) {
+      margin-top: 12px;
+    }
+  }
+
+  &__appeal {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $titleTextColor;
+    margin-bottom: 20px;
+  }
+}
+
+.address {
+  margin-bottom: 9px;
+
+  color: $titleTextColor;
+
+  font-style: normal;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.social-links {
+  &--company {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    justify-content: center;
+  }
+  &__item--company:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon--company {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $titleTextColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--company:hover,
+  &__icon--company:focus {
+    background-color: $accentColor;
+  }
+}
+
+.footer-container-contacts {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.footer__container--mobile-position {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // margin-top: 12px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.footer-title-social-links {
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: $titleTextColor;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
+}
+
+.form-subscribe {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__email-form {
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+    }
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: $titleTextColor;
+  }
+
+  &__email-form::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__email-form:focus {
+    border-color: $accentColor;
+    outline: none;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 50px;
+    min-width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: $accentColor;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background 250ms $animationTimingFunction;
+
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+  &__btn:hover,
+  &__btn:focus {
+    background: $secondaryAccentColor;
+  }
+
+  &__btn--color {
+    color: $titleTextColor;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &__btn-icon {
+    margin-left: 10px;
+    fill: $titleTextColor;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
